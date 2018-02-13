@@ -1,4 +1,4 @@
-pipeline {
+node {
 
     tools {
         maven 'M2'
