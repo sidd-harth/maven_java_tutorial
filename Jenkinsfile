@@ -5,6 +5,7 @@ pipeline {
     tools {
         maven 'M2'
         jdk 'JDK'
+        nodejs 'NODEJS'
     }
     stages {
         stage ('Initialize') {
@@ -29,6 +30,12 @@ pipeline {
 
            
             }
+      stage('Nodejs') {
+      steps {
+        bat 'npm -v'
+        bat 'node -v'
+      }
+    }
         }
     
 }
